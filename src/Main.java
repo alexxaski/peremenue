@@ -21,7 +21,7 @@ public class Main {
         byte teacherAC = 27 ;
         byte teacherEA = 30 ;
         short sheets = 480 ;
-        float gotIt =  sheets/(teacherLP + teacherAC + teacherEA);
+        int gotIt =  (sheets/(teacherLP + teacherAC + teacherEA));
         System.out.println("На каждого ученика рассчитано "+gotIt+" листов бумаги");
 
         byte performanceOfTheBottleMakingMachineTranslation = 16;
@@ -36,8 +36,8 @@ public class Main {
         System.out.println ("За месяц машина произвела "+for1month+" штук бутылок") ;
 
         byte pot = 120;
-        byte ForOneClass = 6;
-        byte totalClasses = (byte) (pot/ForOneClass);
+        byte forOneClass = 6;
+        byte totalClasses = (byte) (pot/forOneClass);
         byte brown = (byte) (4 * totalClasses);
         byte white = (byte) (2 * totalClasses);
         System.out.println ("В школе, где " +totalClasses+ " классов, нужно " +white+ " банок белой краски и " +brown+ " банок коричневой краски") ;
@@ -57,20 +57,22 @@ public class Main {
         System.out.println ("Для результата нужно " +needToReset/planA+ " дней") ;
         System.out.println ("Для результата нужно " +needToReset/planB+ " дней") ;
 
-        int m = 67760 ;
-        int de = 83690 ;
-        int k = 76230 ;
-        int raisingM = (int) (m * 0.1 + m);
-        int raisingDe = (int) (de * 0.1 + de);
-        int raisingK = (int) (k * 0.1 + k);
-        int annualIncomeM = (raisingM - m) * 12 ;
-        int annualIncomeDe = (raisingDe - de) * 12 ;
-        int annualIncomeK = (raisingK - k) * 12 ;
-        System.out.println ("Маша теперь получает " +raisingM+ " рублей. Годовой доход вырос на " +annualIncomeM+ " рублей") ;
-        System.out.println ("Маша теперь получает " +raisingDe+ " рублей. Годовой доход вырос на " +annualIncomeDe+ " рублей") ;
-        System.out.println ("Маша теперь получает " +raisingK+ " рублей. Годовой доход вырос на " +annualIncomeK+ " рублей") ;
+        int masha = 67760 ;
+        int denis = 83690 ;
+        int kristina = 76230 ;
+        int raisingMasha = (int) (masha * 0.1 + masha);
+        int raisingDenis = (int) (denis * 0.1 + denis);
+        int raisingKristina = (int) (kristina * 0.1 + kristina);
+        int annualIncomeMasha = (raisingMasha - masha) * 12 ;
+        int annualIncomeDenis = (raisingDenis - denis) * 12 ;
+        int annualIncomeKristina = (raisingKristina - kristina) * 12 ;
+        System.out.println ("Маша теперь получает " + raisingMasha + " рублей. Годовой доход вырос на " + annualIncomeMasha + " рублей") ;
+        System.out.println ("Денис теперь получает " + raisingDenis + " рублей. Годовой доход вырос на " + annualIncomeDenis + " рублей") ;
+        System.out.println ("Кристина теперь получает " + raisingKristina + " рублей. Годовой доход вырос на " + annualIncomeKristina + " рублей") ;
 
         /* вроде все сделал
+        исправил , была еще ошибка в выводе в последнем задании
+        везде писало маша.
 
          */
     }
